@@ -1,5 +1,5 @@
 .foto-perfil {
-    
+
     max-width: 100%;
     border-radius: 50%;
 }
@@ -13,13 +13,13 @@
 }
 
 p {
-    font-family: Lato, 'HelveticaNeue' Helvetica, Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black !important;
 }
 
 .icones {
     padding-left: 10px;
-    
+
 }
 
 .titulosBrancos {
@@ -37,7 +37,7 @@ p {
     text-transform: uppercase;
     font-weight: 700;
     color: #51C47F;
-    
+
 }
 
 .textoBranco {
@@ -86,9 +86,8 @@ html {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #DDD;
-    border-radius: 5px ;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 textarea {
@@ -102,7 +101,9 @@ h3 {
 }
 
 footer {
-    font-size: 17px;
+    font-size: 1.2rem;
+    padding: 1em;
+    font-weight: bold;
 }
 
 nav {
@@ -121,11 +122,27 @@ a {
 
 p {
     text-align: center;
-   color: #555555 !important;
+    color: #555555 !important;
 }
 
 
 
 .navbar-brand {
     padding-right: 450px;
+}
+
+/* ALTERAÇÕES RECENTES */
+
+#contato {
+    margin-bottom: 3rem;
+}
+
+#button-enviar {
+    padding: 0.7em;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#icon{
+    font-size: 2rem;
 }
