@@ -133,6 +133,12 @@ p {
 
 /* ALTERAÇÕES RECENTES */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 #contato {
     margin-bottom: 3rem;
 }
@@ -143,6 +149,49 @@ p {
     font-size: 1rem;
 }
 
-#icon{
+#icon {
     font-size: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0C0C2C;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    max-width: 200px;
+    transition: all .45s ease;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.button:hover {
+    transition: all .45s ease;
+    transform: scale(0.95);
+    text-decoration: none;
+}
+
+.logo{
+    color: #fff;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0C0C2C;
+    flex-flow: row;
 }
