@@ -106,13 +106,8 @@ footer {
     font-weight: bold;
 }
 
-nav {
-    font-size: 17px;
-}
-
 a {
-    width: 100px;
-    height: 45px;
+    width: 100%;
 }
 
 .contact-form {
@@ -176,22 +171,97 @@ p {
     text-decoration: none;
 }
 
-.logo{
-    color: #fff;
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #0C0C2C;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
 }
 
-.menu{
-    position: relative;
+nav .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #0C0C2C;
-    flex-flow: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #0C0C2C;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        z-index: 1;
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: #51C47F;
+        text-decoration: none;
+    }
+}
+
+#inicial {
+    border-radius: 0;
+}
+
+#sobre{
+    border-radius: 0;
 }
