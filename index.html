@@ -27,35 +27,25 @@
 <body>
 
   <!--NAVBAR-->
-  <nav class="menu">
-    <a class="logo" href="index.html">Nicholas Gerade</a>
-    <button class="navbar-toggler" type="button">
-    </button>
-
-    <div class="menu">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link textoBranco" href="#home">Home <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#sobre">Sobre</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link textoBranco" href="#projetos">
-            Projetos
-          </a>
-
-        </li>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link disabled textoBranco" href="#contato">Contato</a>
-          </li>
-        </ul>
+  <nav>
+    <div class="logo">
+      Logo
     </div>
+
+    <div class="menu-btn">
+      <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projeto</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
   </nav>
 
 
-  <section class="jumbotron text-center corPrimaria">
+  <section id="inicial" class="jumbotron text-center corPrimaria">
     <div class="container">
       <img class="foto-perfil" src="imgs/fotoNicholas.JPG" alt="Foto de Nicholas Gerade" height="260px" width="220px">
       <h1 class="jumbotron-heading textoBranco">Nicholas Gerade</h1>
@@ -70,6 +60,8 @@
 
     </div>
   </section>
+
+
   <div class="album py-5 bg-light" id="projetos">
     <div class="container">
       <h2 class="jumbotron-heading text-center titulosVerdes">Projetos Pessoais</h2>
@@ -128,7 +120,7 @@
   <section class="jumbotron text-center corSecundaria" id="sobre">
     <div class="container">
       <h2 class="jumbotron-heading titulosBrancos">Sobre Mim</h2>
-      <p class="lead textoBranco">Me chamo Nicholas Gerade,tenho 16 anos e moro em São Paulo-SP desde que nasci ,bem,
+      <p class="lead textoBranco">Me chamo Nicholas Gerade,tenho 19 anos e moro em São Paulo-SP desde que nasci, bem,
         meu primeiro contato com programação foi aos 14 anos de idade com HTML5, CSS3 e outras linguagens, no começo foi
         um
         pouco difícil para mim mas com o tempo fui pegando prática e gosto pela área e cada vez mais me apaixono pela
@@ -148,9 +140,9 @@
       <h3>Entre em contato comigo pelo meu e-mail</h3>
       <p>Coloque suas informações abaixo</p>
       <form class="form" method="POST" action="" data-netlify="true">
-        <input class="field" name="name" placeholder="Nome">
-        <input class="field" name="email" placeholder="E-mail">
-        <textarea class="field" name="message" placeholder="Digite Sua Mensagem"></textarea>
+        <input class="field" name="name" placeholder="Nome" required>
+        <input class="field" name="email" placeholder="E-mail" required>
+        <textarea class="field" name="message" placeholder="Digite Sua Mensagem" required></textarea>
         <input type="submit" id="button-enviar" value="ENVIAR">
       </form>
     </div>
@@ -186,6 +178,8 @@
 
   <!--FIM DO FOOTER-->
 
+
+  <script src="script.js"></script>
 </body>
 
 </html>
