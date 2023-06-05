@@ -29,8 +29,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Este projeto foi o primeiro site de Portfólio Pessoal que criei em minha jornada como Front-end, por minha inexperiência o site estava com alguns erros que acabei desistindo de consertar com o tempo, agora que tenho o conhecimento e habilidade suficiente decidi consertar esses erros mas mantendo principalmente o estilo da página que criei logo no começo.
 
-Se você quiser ver o site inicial, com todos os erros, veja neste link: [Site com Erros](https://nicholasgerade.netlify.app/)
-
 Você pode ver o site neste link: [1° - Portfolio Pessoal](https://nigerade.github.io/meu-portfolio/)
 
 --- 
